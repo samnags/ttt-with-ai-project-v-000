@@ -81,13 +81,9 @@ class Game
       until self.over?
         self.turn
       end
-      if self.won? != nil
-        if self.winner == "X"
-          puts "Congratulations X!"
-        elsif self.winner == "O"
-          puts "Congratulations O!"
-        end
-      elsif self.draw? == true
+      if self.won?
+          puts "Congratulations #{self.winner}!"        
+      elsif self.draw?
         puts "Cat's Game!"
       end
     end
