@@ -78,7 +78,7 @@ class Game
     end
 
     def play
-      until self.over? || self.draw?
+      until self.over? 
         self.turn
       end
       if self.won?
