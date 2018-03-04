@@ -15,6 +15,8 @@ module Players
     end
   end
   class Computer < Player
+    def move
       
+    end
   end
 end
