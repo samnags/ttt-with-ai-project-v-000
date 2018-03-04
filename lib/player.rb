@@ -14,4 +14,6 @@ module Players
       user_input
     end
   end
+  class Computer < Player
+  end
 end
