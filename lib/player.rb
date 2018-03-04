@@ -16,7 +16,23 @@ module Players
   end
   class Computer < Player
     def move
-      
+      if @board.taken?(1)
+        if @board.taken?(3)
+          if @board.taken?(7)
+            if @board.taken(5)
+              9
+            else
+              5
+            end
+          else
+            7
+          end
+        else
+          3
+        end
+      else
+        1
+      end
     end
   end
 end
