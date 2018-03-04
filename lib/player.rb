@@ -16,7 +16,11 @@ module Players
   end
   class Computer < Player
     def move(board)
-      "1"
+      if board.valid?("1")
+        "1"
+      else
+        "3"
+      end
     end
   end
 end
